@@ -1,7 +1,7 @@
 import cv2
 import os
 
-img_dir = os.path.dirname(__file__) + "/test_images"
+img_dir = os.path.join(os.path.dirname(__file__), "test_images")
 for count, filename in enumerate(os.listdir(img_dir)):
     object_cascade = cv2.CascadeClassifier("cascade.xml")
     
